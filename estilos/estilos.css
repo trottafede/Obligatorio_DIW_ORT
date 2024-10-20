@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  width: 1280px;
+  justify-content: space-between;
+  margin: 70px auto;
+}
+
+nav img {
+  height: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 2rem;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: rgb(230, 240, 243);
+}
+
+/* chat gpt ayuda con el header */
+header {
+  background-image: url("../img/header.jpg");
+  height: 40vh;
+  background-size: cover;
+  /* This will make sure the image covers the entire div */
+  width: 100%;
+  /* Ensure the div takes the full width of the page */
+  background-position: center;
+  /* This will center the image */
+  background-repeat: no-repeat;
+  /* This will prevent the image from repeating */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+header p {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 20px;
+  /* Adjust as needed */
+  right: 20px;
+  /* Adjust as needed */
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(17, 113, 209);
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+section {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+#nuevos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#nuevos h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 46px;
+  margin: 20px 0;
+}
+
+#nuevos article {
+  width: 32%;
+  border: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+#nuevos article h2 {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+#nuevos article p {
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+#nuevos article p:nth-of-type(2) {
+  text-align: end;
+
+}
+
+#nuevos article p a {
+  text-decoration: none;
+  color: black;
+  text-align: end;
+  border: 1px solid grey;
+  display: inline-block;
+  padding: 10px;
+}
+
+#nuevos article a:hover {
+  background-color: rgb(223, 216, 216);
+}
+
+#nuevos img {
+  width: 100%;
+}
+
+
+/* Destinos destacados */
+#destacados {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+#destacados img {
+  border-radius: 14px;
+  border: 1px solid rgb(27, 243, 200);
+}
+#destacados h1 {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 48px;
+}
+
+#destacados h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+#destacados p {
+  font-size: 1.1rem;
+}
+
+#destacados article:nth-of-type(2) {
+  grid-column: span 2;
+}
+
+#destacados img[src="./img/Dawnstar.jpg"] {
+  width: 100%;
+  height: 300px;
+}
+
+#destacados article:nth-of-type(3) {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+#destacados img[src="./img/Markarth.jpg"] {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#destacados article:nth-of-type(4) {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+#destacados article:nth-of-type(5) {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+#destacados img[src="./img/Solitude.webp"] {
+  width: 100%;
+  height: 300px;
+}
+
+#destacados article:nth-of-type(6) {
+  grid-row-start: 5;
+  grid-column: span 1;
+}
+#destacados article:nth-of-type(7) {
+  grid-row-start: 4;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#destacados article:nth-of-type(7) img {
+  height: 570px;
+  width: 100%;
+}

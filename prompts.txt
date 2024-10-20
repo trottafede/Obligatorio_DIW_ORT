@@ -1,0 +1,54 @@
+I want the background image on my div takes the 100% width of the page showing full 
+image but it does not work:
+background-image: url("../img/header.jpg") ;
+height: 40vh;
+background-size: contain;
+-----------------------
+It looks like you’re almost there! To ensure the background image takes 
+up the full width of the page and shows the entire image, you can adjust your CSS like this:
+div {
+  background-image: url("../img/header.jpg");
+  height: 40vh;
+  background-size: cover; /* This will make sure the image covers the entire div */
+  background-position: center; /* This will center the image */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
+  width: 100%; /* Ensure the div takes the full width of the page */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+
+
+
+ I want the paragraph on the bottom-right corner as well as the H1 vertically and horizontally centered
+
+ Got it! You can achieve this by using a combination of flexbox for centering the H1 and absolute positioning for placing the paragraph in the bottom-right corner. Here’s how you can do it:
+<div class="header-container">
+  <h1>Viajes Lorem</h1>
+  <p class="bottom-right">Proident ad irure eu dolore dolor.</p>
+</div>
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightgrey;
+  position: relative; /* Needed for absolute positioning of the paragraph */
+}
+
+.header-container h1 {
+  margin: 0;
+  padding: 10px;
+}
+
+.header-container .bottom-right {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  margin: 0;
+  padding: 10px;
+}
+
+

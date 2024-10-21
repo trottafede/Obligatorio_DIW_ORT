@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 nav {
   display: flex;
   width: 1280px;
@@ -36,48 +37,54 @@ nav ul li a:hover {
 header {
   background-image: url("../img/header.jpg");
   height: 40vh;
-  background-size: cover;
-  /* This will make sure the image covers the entire div */
   width: 100%;
-  /* Ensure the div takes the full width of the page */
+  background-size: cover;
   background-position: center;
-  /* This will center the image */
-  background-repeat: no-repeat;
-  /* This will prevent the image from repeating */
+  color: white;
 
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
-  color: white;
-  position: relative;
 }
 
 header h1 {
+  text-align: center;
   font-size: 48px;
+  width: 100%;
 }
 
 header p {
-  align-self: flex-end;
-  position: absolute;
-  bottom: 20px;
-  /* Adjust as needed */
-  right: 20px;
-  /* Adjust as needed */
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: end;
+  padding-right: 60px;
 }
 
 header a {
+  display: inline-block;
   text-decoration: none;
+  text-align: center;
   color: black;
-  background-color: rgb(17, 113, 209);
-  padding: 0 10px;
+  
+  background-color: rgb(185, 185, 191);
+  padding: 10px;
+  width: 100px;
   border-radius: 10px;
+  margin-left: 40px;
+}
+
+main {
+  background-color: rgb(222, 220, 220);
+  margin: 70px 0;
+  padding: 20px 0;
 }
 
 section {
   width: 1280px;
   margin: 0 auto;
 }
+
 
 #nuevos {
   display: flex;
@@ -89,13 +96,15 @@ section {
   width: 100%;
   text-align: center;
   font-size: 46px;
-  margin: 20px 0;
+  margin: 40px 0;
+  text-transform: uppercase;
 }
 
 #nuevos article {
   width: 32%;
   border: 1px solid grey;
   padding-bottom: 20px;
+  border-radius: 10px;
 }
 
 #nuevos article h2 {
@@ -105,7 +114,7 @@ section {
 
 #nuevos article p {
   padding: 0 10px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 #nuevos article p:nth-of-type(2) {
@@ -130,20 +139,19 @@ section {
   width: 100%;
 }
 
-
 /* Destinos destacados */
 #destacados {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 60px 1fr 1fr 1fr 1fr;
   gap: 20px;
-  padding: 20px 0;
 }
 
 #destacados img {
   border-radius: 14px;
   border: 1px solid rgb(27, 243, 200);
 }
+
 #destacados h1 {
   grid-column: span 3;
   text-align: center;
@@ -152,11 +160,11 @@ section {
 
 #destacados h2 {
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 2.4rem;
 }
 
 #destacados p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 #destacados article:nth-of-type(2) {
@@ -198,6 +206,7 @@ section {
   grid-row-start: 5;
   grid-column: span 1;
 }
+
 #destacados article:nth-of-type(7) {
   grid-row-start: 4;
   grid-column: span 2;
@@ -207,4 +216,146 @@ section {
 #destacados article:nth-of-type(7) img {
   height: 570px;
   width: 100%;
+}
+
+
+/* Seccion Reservas y horarios */
+
+#reservas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr;
+  gap: 20px;
+}
+
+#reservas h1 {
+  grid-column: span 4;
+  grid-row: span 1;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#reservas article:nth-of-type(1) {
+  grid-column: span 2;
+}
+
+#reservas article:nth-of-type(2) {
+  grid-column: span 2;
+}
+
+#reservas h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#reservas article:nth-of-type(2) form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#reservas input[type="text"], input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+}
+
+#reservas select{
+  width: 100%;
+  padding: 5px;
+}
+
+#reservas textarea{
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+#reservas p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+#reservas label{
+  display: inline-block;
+}
+
+#reservas input[type="checkbox"]+label{
+  width: 43%;
+}
+
+#reservas article:nth-of-type(2) fieldset:nth-of-type(1), fieldset:nth-of-type(2) {
+  width: 49%;
+  border: 0;
+}
+
+#reservas article:nth-of-type(2) input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#reservas article:nth-of-type(2) h2 {
+  width: 100%;
+}
+
+#reservas img[src="./img/horse_ride.webp"] {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#reservas article:nth-of-type(3) {
+  grid-column: span 3;
+
+}
+
+#reservas article:nth-of-type(3) table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+#reservas td {
+  border: 1px solid rgb(227, 223, 223);
+  padding: 10px;
+}
+
+/* Styles for even elements */
+#reservas tr:nth-child(odd) {
+  background-color: rgb(163, 163, 163);
+}
+
+#reservas article:nth-of-type(3) table th {
+  text-align: start;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+}
+
+#reservas img[src="./img/Lake.jpg"] {
+  width: 300px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid grey;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+footer nav img {
+  height: 60px;
 }

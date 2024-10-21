@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./estilos/estilos.css" />
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./img/logo_skyrim.jpg" />
+    <meta name="description" content="Agencia de viajes skyrim" />
+    <meta name="robots" content="NOINDEX" />
+    <meta name="author" content="Federico Trotta 267518">
+    <meta name="keywords" content="Skyrim, agencia, viajes">
     <title>Agencias Skyrim</title>
   </head>
   <body>
@@ -155,12 +159,12 @@
       <article>
         <h2>Reservar</h2>
 
-        <form action="">
+        <form action="get">
           <fieldset>
             <label for="fullName">Nombre Completo</label>
             <input type="text" name="fullName" id="fullName" />
 
-            <select name="listaCiudadesSkyrim" id="listaCiudadesSkyrim">
+            <select aria-label="Lista de ciudades" name="listaCiudadesSkyrim" id="listaCiudadesSkyrim">
               <option value="Destino">Destino</option>
               <option value="Whiterun">Whiterun</option>
               <option value="Solitude">Solitude</option>
@@ -194,7 +198,7 @@
           <fieldset>
             <label for="email_id">Email</label>
             <input type="email" name="email_id" id="email_id" />
-            <textarea></textarea>
+            <textarea aria-label="Text area"></textarea>
           </fieldset>
 
           <input type="submit" value="Enviar" />

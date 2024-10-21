@@ -1,3 +1,8 @@
+Se utiliza IA generativa para generar los textos en espanol que se usaron en la pagina.
+Tambien en algunas dudas especificas mencionadas debajo con su correspondiente prompt.
+
+
+
 I want the background image on my div takes the 100% width of the page showing full 
 image but it does not work:
 background-image: url("../img/header.jpg") ;
@@ -16,9 +21,6 @@ div {
   margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any default padding */
 }
-
-
-
 
  I want the paragraph on the bottom-right corner as well as the H1 vertically and horizontally centered
 

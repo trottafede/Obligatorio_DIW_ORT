@@ -1,14 +1,39 @@
 Se utiliza IA generativa para generar los textos en espanol que se usaron en la pagina.
 Tambien en algunas dudas especificas mencionadas debajo con su correspondiente prompt.
+https://copilot.microsoft.com/
 
+Prompt:
+Give me a short description of College of Winterhold in spanish:
 
+Answer:
+College of Winterhold
+Descubre el Colegio de Hibernalia, donde la magia prospera. 
+Aprende poderosos hechizos, descubre secretos y embárcate en una aventura inolvidable en el místico paraíso invernal de Skyrim.
 
+Prompt:
+Give me a short description of Riften in spanish.
+
+Answer:
+Descubre Riften, la vibrante ciudad de Skyrim. 
+Explora sus bulliciosos mercados, navega por el misterioso Ratway y experimenta la influencia de la poderosa familia Black-Briar.
+
+Prompt:
+Give me a short description of Whiterun in spanish
+
+Answer:
+Whiterun
+Explora Carrera Blanca, el corazón de Skyrim. 
+Descubre sus vibrantes mercados, Dragonsreach y su rica historia. 
+Ya sea que busques aventura o comercio, ofrece una experiencia cautivadora en el centro.
+
+Prompt:
 I want the background image on my div takes the 100% width of the page showing full 
 image but it does not work:
 background-image: url("../img/header.jpg") ;
 height: 40vh;
 background-size: contain;
 -----------------------
+Answer:
 It looks like you’re almost there! To ensure the background image takes 
 up the full width of the page and shows the entire image, you can adjust your CSS like this:
 div {
@@ -22,9 +47,11 @@ div {
   padding: 0; /* Remove any default padding */
 }
 
- I want the paragraph on the bottom-right corner as well as the H1 vertically and horizontally centered
+Prompt:
+I want the paragraph on the bottom-right corner as well as the H1 vertically and horizontally centered
 
- Got it! You can achieve this by using a combination of flexbox for centering the H1 and absolute positioning for placing the paragraph in the bottom-right corner. Here’s how you can do it:
+Answer:
+Got it! You can achieve this by using a combination of flexbox for centering the H1 and absolute positioning for placing the paragraph in the bottom-right corner. Here’s how you can do it:
 <div class="header-container">
   <h1>Viajes Lorem</h1>
   <p class="bottom-right">Proident ad irure eu dolore dolor.</p>
@@ -52,5 +79,3 @@ div {
   margin: 0;
   padding: 10px;
 }
-
-

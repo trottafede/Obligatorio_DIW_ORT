@@ -8,8 +8,8 @@
     <link rel="icon" type="image/x-icon" href="./img/logo_skyrim.jpg" />
     <meta name="description" content="Agencia de viajes skyrim" />
     <meta name="robots" content="NOINDEX" />
-    <meta name="author" content="Federico Trotta 267518">
-    <meta name="keywords" content="Skyrim, agencia, viajes">
+    <meta name="author" content="Federico Trotta 267518" />
+    <meta name="keywords" content="Skyrim, agencia, viajes" />
     <title>Agencias Skyrim</title>
   </head>
   <body>
@@ -159,13 +159,22 @@
       <article>
         <h2>Reservar</h2>
 
-        <form action="get">
+        <form>
           <fieldset>
             <label for="fullName">Nombre Completo</label>
-            <input type="text" name="fullName" id="fullName" />
+            <input
+              placeholder="Ingrese su Nombre"
+              required
+              type="text"
+              name="fullName"
+              id="fullName"
+            />
 
-            <select aria-label="Lista de ciudades" name="listaCiudadesSkyrim" id="listaCiudadesSkyrim">
-              <option value="Destino">Destino</option>
+            <select
+              aria-label="Lista de ciudades"
+              name="listaCiudadesSkyrim"
+              id="listaCiudadesSkyrim"
+            >
               <option value="Whiterun">Whiterun</option>
               <option value="Solitude">Solitude</option>
               <option value="Windhelm">Windhelm</option>
@@ -191,14 +200,20 @@
               type="checkbox"
               id="vehicle4"
               name="vehicle4"
-              value="Boat4"
+              value="vehicle4"
             />
             <label for="vehicle4"> Vehiculo</label>
           </fieldset>
           <fieldset>
             <label for="email_id">Email</label>
-            <input type="email" name="email_id" id="email_id" />
-            <textarea aria-label="Text area"></textarea>
+            <input
+              required
+              placeholder="ejemplo.email@gmail.com"
+              type="email"
+              name="email_id"
+              id="email_id"
+            />
+            <textarea required aria-label="Text area" placeholder="Ingrese su texto aca"></textarea>
           </fieldset>
 
           <input type="submit" value="Enviar" />
@@ -258,8 +273,7 @@
 
     <footer>
       <nav>
-        <a href="#"
-          >\
+        <a href="#">
           <img src="./img/Facebook_logo.png" alt="Facebook Logo" />
         </a>
         <a href="#">

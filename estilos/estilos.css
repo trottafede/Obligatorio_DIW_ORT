@@ -1,11 +1,54 @@
 /* Federico Trotta 267518 */
+
+/* Googel fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jacquard+12&family=Jacquard+24&family=Kings&family=Modern+Antiqua&family=Rubik+Wet+Paint&family=Ultra&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jacquard+12&family=Jacquard+24&family=Kings&family=Macondo&family=Metamorphous&family=Modern+Antiqua&family=Nova+Script&family=Rubik+Wet+Paint&family=Ultra&display=swap');
+
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+p, label, option, select, td, nav {
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  border-radius: 14px;
+  border: 1px solid rgb(27, 243, 200);
+}
+
+#nuevos article,
+#destacados img,
+#reservas img,
+footer nav a {
+  transition: transform 0.3s;
+}
+
+#nuevos article:hover,
+#destacados img:hover,
+#reservas img:hover,
+footer nav a:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 9px 1px #2cdeaf;
+  border: 1px solid rgb(27, 243, 200);
+  cursor: pointer;
+}
+
+
+
+/* Navbar CSS */
 nav {
   display: flex;
   width: 1280px;
@@ -15,6 +58,7 @@ nav {
 
 nav img {
   height: 100px;
+  border: 0;
 }
 
 nav ul {
@@ -25,16 +69,16 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 1.6rem;
   color: black;
+  margin-left: 100px;
 }
 
 nav ul li a:hover {
   background-color: rgb(244, 244, 244);
 }
 
-/* chat gpt ayuda con el header */
+/* header CSS */
 header {
   background-image: url("../img/header.jpg");
   height: 40vh;
@@ -51,28 +95,34 @@ header {
 
 header h1 {
   text-align: center;
-  font-size: 48px;
+  font-size: 4rem;
   width: 100%;
+  width: 1280px;
 }
 
 header p {
   font-size: 1.4rem;
   width: 100%;
   text-align: end;
-  padding-right: 60px;
+  width: 1280px;
+  padding-bottom: 20px;
 }
 
 header a {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: #fff;
 
-  background-color: rgb(137, 137, 137);
+  border: 1px solid grey;
   padding: 5px;
   width: 150px;
   border-radius: 5px;
-  margin-left: 40px;
+  margin-left: 20px;
+}
+
+header a:hover {
+  background-color: #2d2d2d;
 }
 
 main {
@@ -86,7 +136,7 @@ section {
   margin: 0 auto;
 }
 
-
+/* Nuevos CSS */
 #nuevos {
   display: flex;
   justify-content: space-between;
@@ -140,17 +190,12 @@ section {
   width: 100%;
 }
 
-/* Destinos destacados */
+/* Destinos destacados CSS*/
 #destacados {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 60px 1fr 1fr 1fr 1fr;
   gap: 20px;
-}
-
-#destacados img {
-  border-radius: 14px;
-  border: 1px solid rgb(27, 243, 200);
 }
 
 #destacados h1 {
@@ -215,12 +260,12 @@ section {
 }
 
 #destacados article:nth-of-type(7) img {
-  height: 570px;
+  height: 620px;
   width: 100%;
+  object-fit: cover;
 }
 
-
-/* Seccion Reservas y horarios */
+/* Seccion Reservas y horarios CSS*/
 
 #reservas {
   display: grid;
@@ -258,30 +303,36 @@ section {
 #reservas input[type="text"], input[type="email"] {
   display: block;
   width: 100%;
-  padding: 5px;
   border: 1px solid grey;
   margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #reservas select {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #reservas textarea {
   width: 100%;
   height: 100px;
   resize: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #reservas p {
   text-align: center;
   margin: 20px 0;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 #reservas label {
   display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 #reservas input[type="checkbox"]+label {
@@ -329,11 +380,11 @@ section {
 #reservas td {
   border: 1px solid rgb(227, 223, 223);
   padding: 10px;
+
 }
 
-/* Styles for even elements */
 #reservas tr:nth-child(odd) {
-  background-color: rgb(163, 163, 163);
+  background-color: rgb(137, 137, 137);
 }
 
 #reservas article:nth-of-type(3) table th {
@@ -344,7 +395,7 @@ section {
 }
 
 #reservas article:nth-of-type(3) table tr:hover {
-  background-color: rgb(255, 183, 183);
+  background-color: aqua;
   cursor: pointer;
 }
 
@@ -355,7 +406,7 @@ section {
   border-radius: 10px;
 }
 
-/* Footer */
+/* Footer CSS */
 footer {
   border-top: 1px solid grey;
 }
